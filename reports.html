@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17241d">
+  <title>Reports | Third Eye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body data-page="reports">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Third Eye home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>third<span class="brand-light">eye</span><small>ROAD SAFETY INTELLIGENCE</small></span></a>
+      <p class="nav-label">WORKSPACE</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" data-nav="home" href="/"><span class="nav-icon">01</span>Overview</a>
+        <a class="nav-link" data-nav="analyze" href="/analyze"><span class="nav-icon">02</span>Analyze video</a>
+        <a class="nav-link" data-nav="reports" href="/reports"><span class="nav-icon">03</span>Reports</a>
+        <a class="nav-link" data-nav="about" href="/about"><span class="nav-icon">04</span>About</a>
+      </nav>
+      <div class="sidebar-foot"><span class="status-dot"></span><span><strong>Local engine</strong><small>Ollama · Gemma 3</small></span></div>
+    </aside>
+    <main class="main-content">
+      <header class="page-topline"><span>THIRD EYE <span class="topline-slash">/</span> REPORTS</span><span class="system-status"><span class="status-dot"></span> SYSTEM READY</span></header>
+      <section class="page-heading"><div><p class="eyebrow">INCIDENT ARCHIVE</p><h1>Generated reports.</h1><p class="lede">PDF reports from confirmed incidents are stored here.</p></div><a class="button button-dark" href="/analyze">New analysis <span aria-hidden="true">&#8594;</span></a></section>
+      <section class="archive-toolbar"><span><span class="archive-mark" aria-hidden="true">PDF</span> LOCAL REPORT ARCHIVE</span><button id="refresh-reports" class="icon-button" type="button" aria-label="Refresh reports" title="Refresh reports"><svg viewBox="0 0 24 24" fill="none"><path d="M20 7v5h-5M4 17v-5h5m10-1a7 7 0 0 0-12.8-3L4 12m16 0-2.2 4a7 7 0 0 1-12.8-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></section>
+      <div id="reports-list" class="report-list report-list-large" aria-live="polite"><p class="muted">Loading reports...</p></div>
+      <footer class="page-footer"><span>THIRD EYE <i>·</i> INCIDENT REVIEW</span><a href="/about">About this project</a></footer>
+    </main>
+  </div>
+</body>
+</html>

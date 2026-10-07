@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17241d">
+  <title>Overview | Third Eye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body data-page="home">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Third Eye home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>third<span class="brand-light">eye</span><small>ROAD SAFETY INTELLIGENCE</small></span>
+      </a>
+      <p class="nav-label">WORKSPACE</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" data-nav="home" href="/"><span class="nav-icon">01</span>Overview</a>
+        <a class="nav-link" data-nav="analyze" href="/analyze"><span class="nav-icon">02</span>Analyze video</a>
+        <a class="nav-link" data-nav="reports" href="/reports"><span class="nav-icon">03</span>Reports</a>
+        <a class="nav-link" data-nav="about" href="/about"><span class="nav-icon">04</span>About</a>
+      </nav>
+      <div class="sidebar-foot">
+        <span class="status-dot"></span>
+        <span><strong>Local engine</strong><small>Ollama · Gemma 3</small></span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-topline">
+        <span>THIRD EYE <span class="topline-slash">/</span> OVERVIEW</span>
+        <span class="system-status"><span class="status-dot"></span> SYSTEM READY</span>
+      </header>
+      <section class="page-heading">
+        <div><p class="eyebrow">MONITORING DESK</p><h1>Road safety, in focus.</h1><p class="lede">Review footage, verify incidents, and keep the evidence together.</p></div>
+        <a class="button button-dark" href="/analyze">New analysis <span aria-hidden="true">&#8594;</span></a>
+      </section>
+
+      <section class="stat-grid" aria-label="System overview">
+        <article class="stat-block"><span class="stat-label">REPORTS GENERATED</span><strong id="report-count">—</strong><span class="stat-note">Confirmed incident PDFs</span></article>
+        <article class="stat-block"><span class="stat-label">VISION MODEL</span><strong class="stat-model">Gemma 3</strong><span class="stat-note"><span class="status-dot"></span> Running locally with Ollama</span></article>
+        <article class="stat-block"><span class="stat-label">FRAME SAMPLING</span><strong>4 <small>fps</small></strong><span class="stat-note">YOLO screening before verification</span></article>
+      </section>
+
+      <section class="feature-band">
+        <div class="feature-copy"><p class="eyebrow eyebrow-light">VIDEO ANALYSIS</p><h2>One clip.<br>Careful verification.</h2><p>Upload road footage to screen frames and have Gemma verify the strongest potential incidents.</p><a class="text-link text-link-light" href="/analyze">Start an analysis <span aria-hidden="true">&#8594;</span></a></div>
+        <div class="feature-photo" role="img" aria-label="Urban road with traffic at dusk"><span class="photo-caption">FRAME BY FRAME <i>·</i> EVIDENCE FIRST</span></div>
+      </section>
+
+      <section class="section-heading"><div><p class="eyebrow">YOUR WORKSPACE</p><h2>Recent reports</h2></div><a class="text-link" href="/reports">View all <span aria-hidden="true">&#8594;</span></a></section>
+      <div id="recent-reports" class="report-list" aria-live="polite"><p class="muted">Loading reports...</p></div>
+      <footer class="page-footer"><span>THIRD EYE <i>·</i> INCIDENT REVIEW</span><a href="/about">About this project</a></footer>
+    </main>
+  </div>
+</body>
+</html>
